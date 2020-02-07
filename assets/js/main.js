@@ -37,7 +37,7 @@ $(document).ready(function () {
             "Answer": 6 - a2,
             "Description": ""
         }
-        fetch('https://cmisfahan.ir/api/suggestion', {
+        fetch('http://cmisfahan.ir/api/suggestion', {
             method: 'POST', // or 'PUT'
             headers: {
                 'Content-Type': 'application/json',
