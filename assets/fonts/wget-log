@@ -1,0 +1,11 @@
+--2020-02-07 05:37:21--  http://netdna.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.eot?
+Resolving netdna.bootstrapcdn.com (netdna.bootstrapcdn.com)... 209.197.3.15, 2001:4de0:ac19::1:b:1b, 2001:4de0:ac19::1:b:2b, ...
+Connecting to netdna.bootstrapcdn.com (netdna.bootstrapcdn.com)|209.197.3.15|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 56006 (55K) [application/vnd.ms-fontobject]
+Saving to: ‘fontawesome-webfont.eot?’
+
+fontawesome-webfont.eot   0%[                               ]       0  --.-KB/s               fontawesome-webfont.eot  87%[==========================>    ]  48.00K   222KB/s               fontawesome-webfont.eot 100%[==============================>]  54.69K   177KB/s    in 0.3s    
+
+2020-02-07 05:37:22 (177 KB/s) - ‘fontawesome-webfont.eot?’ saved [56006/56006]
+
