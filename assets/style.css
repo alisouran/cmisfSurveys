@@ -40,9 +40,9 @@ html {
 
 @font-face {
     font-family: Vazir;
-    src: url('assets/fonts/Vazir.eot');
-    src: url('assets/fonts/fonts/Vazir.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
-    url('/assets/fonts/Vazir.woff2') format("woff2"), url('assets/fonts/Vazir.woff') format("woff"), url('assets/fonts/Vazir.ttf') format("truetype");
+    src: url('fonts/Vazir.eot');
+    src: url('fonts/fonts/Vazir.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('fonts/Vazir.woff2') format("woff2"), url('fonts/Vazir.woff') format("woff"), url('fonts/Vazir.ttf') format("truetype");
 }
 
 .body {
