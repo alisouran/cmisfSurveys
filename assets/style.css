@@ -180,4 +180,21 @@ label.star:before {
     font-family: FontAwesome;
 }
 
-textarea {}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    section>div {
+        top: 35%;
+    }
+    div>img {
+        width: 55%;
+    }
+    div>h2 {
+        padding: 0;
+    }
+    textarea {
+        height: 150px;
+        width: 300px;
+    }
+    .ta {
+        top: 50% !important;
+    }
+}
