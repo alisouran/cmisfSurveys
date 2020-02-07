@@ -11,19 +11,20 @@ $(document).ready(function () {
             "Answer": 6 - a1,
             "Description": ""
         }
-        xhr = new XMLHttpRequest();
-        var url = "https://cmisfahan.ir/api/suggestion";
-        xhr.open("POST", url, true);
-        xhr.setRequestHeader("Content-type", "application/json");
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState == 4 && xhr.status == 200) {
-                var json = JSON.parse(xhr.responseText);
-                console.log(json.email + ", " + json.name)
-            }
-        }
-        var data = JSON.stringify(result);
-        xhr.send(data);
-        console.log(data)
+        fetch('http://cmisfahan.ir/api/suggestion', {
+            method: 'POST', // or 'PUT'
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(result),
+        })
+            .then((response) => response.json())
+            .then((data) => {
+                console.log('Success:', data);
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
     });
     // Answer to Second Question
     $("input[name=question2]").change(function (e) {
@@ -57,7 +58,6 @@ $(document).ready(function () {
     $("input[name=question3]").change(function (e) {
         e.preventDefault();
         $("input[name=question3]").attr("disabled", "disabled");
-        console.log("hi")
         var a3 = $("input[name=question3]:checked").val();
         var result = {
             "Question_Id": "3",
@@ -65,19 +65,20 @@ $(document).ready(function () {
             "Answer": 6 - a3,
             "Description": ""
         }
-        xhr = new XMLHttpRequest();
-        var url = "https://cmisfahan.ir/api/suggestion";
-        xhr.open("POST", url, true);
-        xhr.setRequestHeader("Content-type", "application/json");
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState == 4 && xhr.status == 200) {
-                var json = JSON.parse(xhr.responseText);
-                console.log(json.email + ", " + json.name)
-            }
-        }
-        var data = JSON.stringify(result);
-        xhr.send(data);
-        console.log(data)
+        fetch('http://cmisfahan.ir/api/suggestion', {
+            method: 'POST', // or 'PUT'
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(result),
+        })
+            .then((response) => response.json())
+            .then((data) => {
+                console.log('Success:', data);
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
     });
     // Answer to 4th Question
     $("input[name=question4]").change(function (e) {
