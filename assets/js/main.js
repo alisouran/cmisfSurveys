@@ -37,19 +37,21 @@ $(document).ready(function () {
             "Answer": 6 - a2,
             "Description": ""
         }
-        xhr = new XMLHttpRequest();
-        var url = "https://cmisfahan.ir/api/suggestion";
-        xhr.open("POST", url, true);
-        xhr.setRequestHeader("Content-type", "application/json");
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState == 4 && xhr.status == 200) {
-                var json = JSON.parse(xhr.responseText);
-                console.log(json.email + ", " + json.name)
-            }
-        }
-        var data = JSON.stringify(result);
-        xhr.send(data);
-        console.log(data)
+        fetch('https://cmisfahan.ir/api/suggestion', {
+            method: 'POST', // or 'PUT'
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(result),
+        })
+            .then((response) => response.json())
+            .then((data) => {
+                console.log('Success:', data);
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+
     });
     // Answer to 3rd Question
     $("input[name=question3]").change(function (e) {
