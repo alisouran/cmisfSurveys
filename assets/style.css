@@ -189,6 +189,10 @@ label.star:before {
     font-family: FontAwesome;
 }
 
+textarea {
+    font-family: Vazir;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
     section>div {
         top: 35%;

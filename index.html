@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fa">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -133,38 +134,15 @@
         </section>
         <section data-anchor="Page 8">
             <div>
-                <h2 class="q1">ممنونیم که وقت گذاشتید و توی نظرسنجی ما شرکت کردید. <br> برای ارسال فرم روی دکمه‌ی زیر
-                    کلیک کنید. </h2>
+                <h2 class="q1">ممنونیم که وقت گذاشتید و توی نظرسنجی ما شرکت کردید. </h2>
                 <br><br>
-                <button id="submit">ارسال فرم</button>
             </div>
         </section>
     </main>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#submit").click(function (e) {
-                e.preventDefault();
-                var q1 = $("input[name=question1]:checked").val();
-                var q2 = $("input[name=question2]:checked").val();
-                var q3 = $("input[name=question3]:checked").val();
-                var q4 = $("input[name=question4]:checked").val();
-                var q5 = $("input[name=question5]:checked").val();
-                var q6 = $("textarea[name=jozei]").val();
-                var result = {
-                    "question1": 6 - q1,
-                    "question2": 6 - q2,
-                    "question3": 6 - q3,
-                    "question4": 6 - q4,
-                    "question5": 6 - q5,
-                    "question6": q6
-                }
-                console.log(result)
-            });
-        });
-    </script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
